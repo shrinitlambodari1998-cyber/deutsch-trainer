@@ -1768,4 +1768,13 @@ home();
 })();
 </script>
 
+<!-- Visitor stats (GoatCounter: no cookies, no personal data). Dashboard: https://shrinit-deutsch.goatcounter.com -->
+<script data-goatcounter="https://shrinit-deutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+// count which tools people open, once per tab per visit
+(function(){var seen={};document.querySelectorAll(".tab").forEach(function(b){b.addEventListener("click",function(){
+  var k=b.textContent.trim();if(seen[k])return;seen[k]=1;
+  if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:"tool-"+k.toLowerCase(),title:"Opened "+k,event:true});
+})})})();
+</script>
 </body></html>
